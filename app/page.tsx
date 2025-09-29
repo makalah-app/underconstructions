@@ -65,14 +65,14 @@ export default function UnderConstruction() {
           {/* Status */}
           <div className="max-w-3xl mx-auto animate-fade-in mb-6">
             <div className="bg-card border border-border p-6 rounded-[3px]">
-              <div className="flex items-center gap-3">
-                <h2 className="text-2xl md:text-3xl font-semibold font-heading text-primary">
+              <div className="flex items-center justify-center gap-3">
+                <h2 className="text-2xl md:text-3xl font-semibold font-heading text-white">
                   Aplikasi Dalam Pembangunan
                 </h2>
                 <div className="flex gap-2">
-                  <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse" />
-                  <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse delay-150" />
-                  <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse delay-300" />
+                  <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse" />
+                  <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse delay-150" />
+                  <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse delay-300" />
                 </div>
               </div>
             </div>
