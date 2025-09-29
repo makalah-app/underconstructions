@@ -1,15 +1,7 @@
-'use client';
-
 import Image from 'next/image';
 import { Check } from 'lucide-react';
-import { useEffect, useState } from 'react';
 
 export default function UnderConstruction() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const features = [
     "Fokus anda adalah berpikir, bukan berkutat dengan prompt",
@@ -24,7 +16,7 @@ export default function UnderConstruction() {
 
       <div className="relative z-10 container mx-auto px-4 py-12 md:py-20 max-w-4xl">
         {/* Logo */}
-        <div className={`flex justify-center mb-12 transition-all duration-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
+        <div className="flex justify-center mb-12 animate-fade-in">
           <div className="relative">
             <Image
               src="/logo.png"
@@ -39,12 +31,12 @@ export default function UnderConstruction() {
         </div>
 
         {/* Main Heading */}
-        <h1 className={`text-4xl md:text-6xl font-heading font-bold text-center mb-12 transition-all duration-500 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
+        <h1 className="text-4xl md:text-6xl font-heading font-bold text-center mb-12 animate-slide-up">
           Bikin Paper Akademik
         </h1>
 
         {/* Features List */}
-        <div className={`bg-card/50 backdrop-blur rounded-lg p-6 md:p-8 mb-10 transition-all duration-500 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+        <div className="bg-card/50 backdrop-blur rounded-lg p-6 md:p-8 mb-10 animate-fade-in">
           <ul className="space-y-4">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start gap-3">
@@ -62,7 +54,7 @@ export default function UnderConstruction() {
         </div>
 
         {/* Quote Section */}
-        <div className={`text-center mb-12 transition-all duration-500 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+        <div className="text-center mb-12 animate-slide-up">
           <div className="relative inline-block">
             <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
             <blockquote className="relative text-lg md:text-xl italic text-muted-foreground leading-relaxed">
@@ -75,7 +67,7 @@ export default function UnderConstruction() {
         </div>
 
         {/* Status */}
-        <div className={`text-center mb-16 transition-all duration-500 delay-400 ${mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-2xl md:text-3xl font-heading font-semibold text-primary">
             Aplikasi Dalam Pembangunan
           </h2>
@@ -87,7 +79,7 @@ export default function UnderConstruction() {
         </div>
 
         {/* Footer */}
-        <footer className={`text-center space-y-6 transition-all duration-500 delay-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+        <footer className="text-center space-y-6 animate-slide-up">
           {/* Contact */}
           <div>
             <p className="text-sm text-muted-foreground mb-2">Kontak</p>

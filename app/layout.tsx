@@ -46,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className={`${inter.variable} ${roboto.variable}`}>
-      <body className="bg-background text-foreground font-sans antialiased">
+      <body className={`bg-background text-foreground font-sans antialiased ${inter.className}`}>
         {children}
       </body>
     </html>
