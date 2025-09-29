@@ -11,7 +11,7 @@ export default function UnderConstruction() {
   return (
     <div className="h-screen transition-colors duration-300 bg-background text-foreground overflow-hidden">
       {/* Hero Section */}
-      <section className="px-8 py-4 relative h-full flex flex-col">
+      <section className="px-4 md:px-8 py-4 relative h-full flex flex-col">
         <div className="absolute inset-0 opacity-30 hero-pattern-dark"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto w-full flex-1 flex items-center justify-center">
@@ -32,11 +32,11 @@ export default function UnderConstruction() {
           </div>
 
           {/* Content Container */}
-          <div className="max-w-2xl mx-auto text-left space-y-6">
+          <div className="max-w-sm md:max-w-2xl mx-auto text-left space-y-4 md:space-y-6">
             {/* Main Heading */}
-            <h1 className="text-6xl md:text-6xl font-bold leading-tight text-foreground font-heading animate-slide-up">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-foreground font-heading animate-slide-up">
               Bikin <span className="text-primary">Paper Akademik</span><br />
-              <span className="text-4xl md:text-5xl">Tanpa Pusing Prompting!</span>
+              <span className="text-2xl md:text-4xl">Tanpa Pusing Prompting!</span>
             </h1>
 
             {/* Features List */}
@@ -59,18 +59,18 @@ export default function UnderConstruction() {
             <div className="animate-slide-up">
               <div className="relative">
                 <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
-                <blockquote className="relative text-lg md:text-xl font-medium text-foreground leading-relaxed text-left">
-                  <p>Anda adalah pawang, sedangkan AI hanya tukang</p>
-                  <p>karya tulis tetap hasil buah pikir orisinal</p>
+                <blockquote className="relative text-base md:text-xl font-medium text-foreground leading-relaxed text-center">
+                  <p>Anda adalah pawang, sedangkan AI hanya tukang.</p>
+                  <p>Karya tulis tetap hasil buah pikir orisinal</p>
                 </blockquote>
               </div>
             </div>
 
             {/* Status */}
             <div className="animate-fade-in">
-              <div className="bg-card border border-border p-6 rounded-[3px]">
-                <div className="flex items-center justify-center gap-3">
-                  <h2 className="text-2xl md:text-3xl font-semibold font-heading text-white">
+              <div className="bg-card border border-border p-4 md:p-6 rounded-[3px]">
+                <div className="flex items-center justify-center gap-2 md:gap-3">
+                  <h2 className="text-lg md:text-3xl font-semibold font-heading text-white">
                     Aplikasi Dalam Pembangunan
                   </h2>
                   <div className="flex gap-2">
@@ -86,7 +86,7 @@ export default function UnderConstruction() {
         </div>
 
         {/* Footer */}
-        <footer className="relative z-10 animate-slide-up border-t border-border pt-4 max-w-2xl mx-auto w-full">
+        <footer className="relative z-10 animate-slide-up border-t border-border pt-4 max-w-sm md:max-w-2xl mx-auto w-full">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
             {/* Contact */}
             <div className="text-center md:text-left">
