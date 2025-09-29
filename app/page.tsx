@@ -33,8 +33,9 @@ export default function UnderConstruction() {
           {/* Content Container */}
           <div className="max-w-2xl mx-auto text-center space-y-8">
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight text-foreground font-heading animate-slide-up">
-              Bikin <span className="text-primary">Paper Akademik</span>
+            <h1 className="text-5xl md:text-6xl font-medium leading-tight text-foreground font-heading animate-slide-up">
+              Bikin <span className="text-primary">Paper Akademik</span><br />
+              Tanpa Pusing Prompting!
             </h1>
 
             {/* Features List */}
@@ -58,7 +59,7 @@ export default function UnderConstruction() {
               <div className="relative">
                 <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
                 <blockquote className="relative text-lg md:text-xl font-medium text-foreground leading-relaxed text-left">
-                  <p>Anda adalah pawang,sedangkan AI hanya tukang</p>
+                  <p>Anda adalah pawang, sedangkan AI hanya tukang</p>
                   <p>karya tulis tetap hasil buah pikir orisinal</p>
                 </blockquote>
               </div>
