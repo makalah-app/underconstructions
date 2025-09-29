@@ -30,49 +30,52 @@ export default function UnderConstruction() {
             </div>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-medium leading-tight text-foreground font-heading animate-slide-up text-left mb-8 max-w-3xl mx-auto">
-            Bikin <span className="text-primary">Paper Akademik</span>
-          </h1>
+          {/* Content Container */}
+          <div className="max-w-2xl mx-auto text-center space-y-8">
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-5xl font-medium leading-tight text-foreground font-heading animate-slide-up">
+              Bikin <span className="text-primary">Paper Akademik</span>
+            </h1>
 
-          {/* Features List */}
-          <div className="max-w-3xl mx-auto animate-fade-in mb-8">
-            <ul className="space-y-2 text-sm md:text-base leading-relaxed text-muted-foreground">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                      <Check className="w-3 h-3 text-primary-foreground" />
+            {/* Features List */}
+            <div className="animate-fade-in">
+              <ul className="space-y-2 text-sm md:text-base leading-relaxed text-muted-foreground text-left">
+                {features.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+                        <Check className="w-3 h-3 text-primary-foreground" />
+                      </div>
                     </div>
-                  </div>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Quote Section */}
-          <div className="text-left animate-slide-up mb-8 max-w-3xl mx-auto">
-            <div className="relative">
-              <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
-              <blockquote className="relative text-lg md:text-xl font-medium text-foreground leading-relaxed">
-                <p>Anda adalah pawang,sedangkan AI hanya tukang</p>
-                <p>karya tulis tetap hasil buah pikir orisinal</p>
-              </blockquote>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
 
-          {/* Status */}
-          <div className="max-w-3xl mx-auto animate-fade-in mb-6">
-            <div className="bg-card border border-border p-6 rounded-[3px]">
-              <div className="flex items-center justify-center gap-3">
-                <h2 className="text-2xl md:text-3xl font-semibold font-heading text-white">
-                  Aplikasi Dalam Pembangunan
-                </h2>
-                <div className="flex gap-2">
-                  <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse" />
-                  <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse delay-150" />
-                  <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse delay-300" />
+            {/* Quote Section */}
+            <div className="animate-slide-up">
+              <div className="relative">
+                <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
+                <blockquote className="relative text-lg md:text-xl font-medium text-foreground leading-relaxed text-left">
+                  <p>Anda adalah pawang,sedangkan AI hanya tukang</p>
+                  <p>karya tulis tetap hasil buah pikir orisinal</p>
+                </blockquote>
+              </div>
+            </div>
+
+            {/* Status */}
+            <div className="animate-fade-in">
+              <div className="bg-card border border-border p-6 rounded-[3px]">
+                <div className="flex items-center justify-center gap-3">
+                  <h2 className="text-2xl md:text-3xl font-semibold font-heading text-white">
+                    Aplikasi Dalam Pembangunan
+                  </h2>
+                  <div className="flex gap-2">
+                    <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse" />
+                    <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse delay-150" />
+                    <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse delay-300" />
+                  </div>
                 </div>
               </div>
             </div>
