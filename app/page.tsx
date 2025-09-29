@@ -3,9 +3,11 @@ import { Check } from 'lucide-react';
 
 export default function UnderConstruction() {
   const features = [
-    "Fokus anda adalah berpikir, bukan berkutat dengan prompt",
+    "Fokus Anda adalah berpikir, bukan berkutat dengan prompt",
     "Obrolkan secara natural tiap detail tanpa prompt ruwet",
-    "Lalu biarkan AI memandu tiap tahap penyusunan dan mengetik hingga kelar"
+    "Makalah Agen akan memandu tiap tahap penyusun",
+    "Menjaga fokus dan cakupan tulisan tanpa keluar konteks",
+    "Makalah Agen bakal jadi tukang tulis dan reviu hingga matang",
   ];
 
   return (
