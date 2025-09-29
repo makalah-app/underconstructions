@@ -31,9 +31,9 @@ export default function UnderConstruction() {
           </div>
 
           {/* Content Container */}
-          <div className="max-w-2xl mx-auto text-center space-y-8">
+          <div className="max-w-3xl mx-auto text-left space-y-8">
             {/* Main Heading */}
-            <h1 className="text-5xl md:text-6xl font-medium leading-tight text-foreground font-heading animate-slide-up">
+            <h1 className="text-6xl md:text-6xl font-bold leading-tight text-foreground font-heading animate-slide-up">
               Bikin <span className="text-primary">Paper Akademik</span><br />
               Tanpa Pusing Prompting!
             </h1>
