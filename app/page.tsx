@@ -31,11 +31,11 @@ export default function UnderConstruction() {
           </div>
 
           {/* Content Container */}
-          <div className="max-w-3xl mx-auto text-left space-y-8">
+          <div className="max-w-1xl mx-auto text-left space-y-6">
             {/* Main Heading */}
             <h1 className="text-6xl md:text-6xl font-bold leading-tight text-foreground font-heading animate-slide-up">
               Bikin <span className="text-primary">Paper Akademik</span><br />
-              Tanpa Pusing Prompting!
+              <span className="text-4xl md:text-5xl">Tanpa Pusing Prompting!</span>
             </h1>
 
             {/* Features List */}
