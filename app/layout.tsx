@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className={`${inter.variable} ${roboto.variable}`}>
+    <html lang="id" className={`dark ${inter.variable} ${roboto.variable}`}>
       <body className={`bg-background text-foreground font-sans antialiased ${inter.className}`}>
         {children}
       </body>

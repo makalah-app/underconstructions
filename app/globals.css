@@ -49,6 +49,16 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading), 'Roboto', system-ui, sans-serif;
   }
+
+  /* Hero pattern backgrounds */
+  .hero-pattern-light {
+    background-image: radial-gradient(circle at 1px 1px, rgba(203, 213, 225, 0.3) 1px, transparent 0);
+    background-size: 16px 16px;
+  }
+  .hero-pattern-dark {
+    background-image: radial-gradient(circle at 1px 1px, rgba(42, 58, 79, 0.3) 1px, transparent 0);
+    background-size: 16px 16px;
+  }
 }
 
 @layer utilities {
