@@ -9,20 +9,20 @@ export default function UnderConstruction() {
   ];
 
   return (
-    <div className="min-h-screen transition-colors duration-300 bg-background text-foreground">
+    <div className="h-screen transition-colors duration-300 bg-background text-foreground overflow-hidden">
       {/* Hero Section */}
-      <section className="px-6 py-16 text-center relative min-h-screen flex flex-col justify-center">
+      <section className="px-8 py-8 relative h-full flex flex-col justify-between">
         <div className="absolute inset-0 opacity-30 hero-pattern-dark"></div>
 
-        <div className="relative z-10 max-w-4xl mx-auto space-y-8">
+        <div className="relative z-10 max-w-4xl mx-auto w-full">
           {/* Logo */}
-          <div className="flex justify-center animate-fade-in">
+          <div className="flex justify-center mb-6 animate-fade-in">
             <div className="relative">
               <Image
                 src="/logo.png"
                 alt="Makalah AI Logo"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
                 className="rounded-[3px] shadow-lg"
                 priority
               />
@@ -31,13 +31,13 @@ export default function UnderConstruction() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-medium leading-tight text-foreground font-heading animate-slide-up">
+          <h1 className="text-4xl md:text-5xl font-medium leading-tight text-foreground font-heading animate-slide-up text-center mb-8">
             Bikin <span className="text-primary">Paper Akademik</span>
           </h1>
 
           {/* Features List */}
-          <div className="max-w-2xl mx-auto animate-fade-in">
-            <ul className="space-y-3 text-lg md:text-xl leading-relaxed text-muted-foreground">
+          <div className="max-w-3xl mx-auto animate-fade-in mb-8">
+            <ul className="space-y-2 text-base md:text-lg leading-relaxed text-muted-foreground">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
@@ -52,10 +52,10 @@ export default function UnderConstruction() {
           </div>
 
           {/* Quote Section */}
-          <div className="text-center animate-slide-up">
-            <div className="relative inline-block max-w-md">
+          <div className="text-left animate-slide-up mb-8 max-w-3xl mx-auto">
+            <div className="relative">
               <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
-              <blockquote className="relative text-xl md:text-2xl font-medium text-foreground leading-relaxed">
+              <blockquote className="relative text-lg md:text-xl font-medium text-foreground leading-relaxed">
                 <p>Anda adalah pawang,</p>
                 <p>sedangkan AI hanya tukang</p>
                 <p>karya tulis tetap</p>
@@ -65,57 +65,57 @@ export default function UnderConstruction() {
           </div>
 
           {/* Status */}
-          <div className="text-center animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-semibold font-heading text-primary">
+          <div className="text-center animate-fade-in mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold font-heading text-primary">
               Aplikasi Dalam Pembangunan
             </h2>
-            <div className="mt-4 flex justify-center gap-2">
+            <div className="mt-2 flex justify-center gap-2">
               <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse delay-150" />
               <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse delay-300" />
             </div>
           </div>
-
-          {/* Footer */}
-          <footer className="text-center space-y-4 animate-slide-up border-t border-border pt-8">
-            {/* Contact */}
-            <div>
-              <p className="text-sm text-muted-foreground mb-2">Kontak</p>
-              <a
-                href="mailto:dukungan@makalah.ai"
-                className="text-primary hover:text-primary/80 transition-colors font-medium"
-              >
-                dukungan@makalah.ai
-              </a>
-            </div>
-
-            {/* Beta Link */}
-            <div className="pt-4 border-t border-border/50">
-              <p className="text-xs text-muted-foreground mb-2">
-                Kunjungi beta version
-              </p>
-              <a
-                href="https://beta.makalah.ai/auth"
-                className="text-sm text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2 group"
-              >
-                <span>https://beta.makalah.ai</span>
-                <svg
-                  className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </a>
-            </div>
-          </footer>
         </div>
+
+        {/* Footer */}
+        <footer className="relative z-10 text-center space-y-3 animate-slide-up border-t border-border pt-4 max-w-4xl mx-auto w-full">
+          {/* Contact */}
+          <div>
+            <p className="text-xs text-muted-foreground mb-1">Kontak</p>
+            <a
+              href="mailto:dukungan@makalah.ai"
+              className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              dukungan@makalah.ai
+            </a>
+          </div>
+
+          {/* Beta Link */}
+          <div>
+            <p className="text-xs text-muted-foreground mb-1">
+              Kunjungi beta version
+            </p>
+            <a
+              href="https://beta.makalah.ai/auth"
+              className="text-xs text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1 group"
+            >
+              <span>https://beta.makalah.ai</span>
+              <svg
+                className="w-3 h-3 transition-transform group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </a>
+          </div>
+        </footer>
       </section>
     </div>
   );
