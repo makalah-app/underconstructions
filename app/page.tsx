@@ -11,12 +11,13 @@ export default function UnderConstruction() {
   return (
     <div className="h-screen transition-colors duration-300 bg-background text-foreground overflow-hidden">
       {/* Hero Section */}
-      <section className="px-8 py-8 relative h-full flex flex-col justify-between">
+      <section className="px-8 py-4 relative h-full flex flex-col">
         <div className="absolute inset-0 opacity-30 hero-pattern-dark"></div>
 
-        <div className="relative z-10 max-w-4xl mx-auto w-full">
-          {/* Logo */}
-          <div className="flex justify-center mb-6 animate-fade-in">
+        <div className="relative z-10 max-w-4xl mx-auto w-full flex-1 flex items-center justify-center">
+          <div className="w-full">
+            {/* Logo */}
+            <div className="flex justify-center mb-6 animate-fade-in">
             <div className="relative">
               <Image
                 src="/logo.png"
@@ -44,7 +45,7 @@ export default function UnderConstruction() {
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
                         <Check className="w-3 h-3 text-primary-foreground" />
                       </div>
                     </div>
@@ -82,6 +83,7 @@ export default function UnderConstruction() {
             </div>
           </div>
         </div>
+        </div>
 
         {/* Footer */}
         <footer className="relative z-10 animate-slide-up border-t border-border pt-4 max-w-2xl mx-auto w-full">
@@ -91,7 +93,7 @@ export default function UnderConstruction() {
               <p className="text-xs text-muted-foreground mb-1">Kontak</p>
               <a
                 href="mailto:dukungan@makalah.ai"
-                className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
+                className="text-sm text-white hover:text-white/80 transition-colors font-medium"
               >
                 dukungan@makalah.ai
               </a>
@@ -104,7 +106,7 @@ export default function UnderConstruction() {
               </p>
               <a
                 href="https://beta.makalah.ai/auth"
-                className="text-xs text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1 group"
+                className="text-xs text-white hover:text-white/80 transition-colors inline-flex items-center gap-1 group"
               >
                 <span>https://beta.makalah.ai</span>
                 <svg
