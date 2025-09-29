@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 export default function UnderConstruction() {
   const features = [
     "Fokus anda adalah berpikir, bukan berkutat dengan prompt",
-    "Obrolkan secara natural tiap detail kebutuhan tanpa prompt ruwet",
+    "Obrolkan secara natural tiap detail tanpa prompt ruwet",
     "Lalu biarkan AI memandu tiap tahap penyusunan dan mengetik hingga kelar"
   ];
 
@@ -32,11 +32,11 @@ export default function UnderConstruction() {
           </div>
 
           {/* Content Container */}
-          <div className="max-w-sm md:max-w-2xl mx-auto text-left space-y-4 md:space-y-6">
+          <div className="max-w-xs md:max-w-2xl mx-auto text-left space-y-3 md:space-y-6">
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-foreground font-heading animate-slide-up">
+            <h1 className="text-3xl md:text-6xl font-bold leading-tight text-foreground font-heading animate-slide-up">
               Bikin <span className="text-primary">Paper Akademik</span><br />
-              <span className="text-2xl md:text-4xl">Tanpa Pusing Prompting!</span>
+              <span className="text-xl md:text-4xl">Tanpa Pusing Prompting!</span>
             </h1>
 
             {/* Features List */}
@@ -59,7 +59,7 @@ export default function UnderConstruction() {
             <div className="animate-slide-up">
               <div className="relative">
                 <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
-                <blockquote className="relative text-base md:text-xl font-medium text-foreground leading-relaxed text-center">
+                <blockquote className="relative text-sm md:text-xl font-medium text-foreground leading-relaxed text-center">
                   <p>Anda adalah pawang, sedangkan AI hanya tukang.</p>
                   <p>Karya tulis tetap hasil buah pikir orisinal</p>
                 </blockquote>
@@ -68,9 +68,9 @@ export default function UnderConstruction() {
 
             {/* Status */}
             <div className="animate-fade-in">
-              <div className="bg-card border border-border p-4 md:p-6 rounded-[3px]">
+              <div className="bg-card border border-border p-3 md:p-6 rounded-[3px]">
                 <div className="flex items-center justify-center gap-2 md:gap-3">
-                  <h2 className="text-lg md:text-3xl font-semibold font-heading text-white">
+                  <h2 className="text-base md:text-2xl font-semibold font-heading text-white">
                     Aplikasi Dalam Pembangunan
                   </h2>
                   <div className="flex gap-2">
@@ -86,7 +86,7 @@ export default function UnderConstruction() {
         </div>
 
         {/* Footer */}
-        <footer className="relative z-10 animate-slide-up border-t border-border pt-4 max-w-sm md:max-w-2xl mx-auto w-full">
+        <footer className="relative z-10 animate-slide-up border-t border-border pt-4 max-w-xs md:max-w-2xl mx-auto w-full">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
             {/* Contact */}
             <div className="text-center md:text-left">
