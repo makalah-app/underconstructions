@@ -5,9 +5,10 @@ export default function UnderConstruction() {
   const features = [
     "Fokus Anda adalah berpikir, bukan berkutat dengan prompt",
     "Obrolkan secara natural tiap detail tanpa prompt ruwet",
-    "Makalah Agen akan memandu tiap tahap penyusun",
-    "Menjaga fokus dan cakupan tulisan tanpa keluar konteks",
-    "Makalah Agen bakal jadi tukang tulis dan reviu hingga matang",
+    "Agen AI Makalah akan memandu tiap tahap penyusun",
+    "Menjaga fokus dan cakupan topik tanpa keluar konteks",
+    "Mendapatkan sitasi akurat tanpa ancaman plagiasi",
+    "Agen Ai Makalah siap jadi tukang tulis dan reviu hingga matang",
   ];
 
   return (
