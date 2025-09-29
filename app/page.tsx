@@ -76,42 +76,44 @@ export default function UnderConstruction() {
         </div>
 
         {/* Footer */}
-        <footer className="relative z-10 text-center space-y-3 animate-slide-up border-t border-border pt-4 max-w-4xl mx-auto w-full">
-          {/* Contact */}
-          <div>
-            <p className="text-xs text-muted-foreground mb-1">Kontak</p>
-            <a
-              href="mailto:dukungan@makalah.ai"
-              className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
-            >
-              dukungan@makalah.ai
-            </a>
-          </div>
-
-          {/* Beta Link */}
-          <div>
-            <p className="text-xs text-muted-foreground mb-1">
-              Kunjungi beta version
-            </p>
-            <a
-              href="https://beta.makalah.ai/auth"
-              className="text-xs text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1 group"
-            >
-              <span>https://beta.makalah.ai</span>
-              <svg
-                className="w-3 h-3 transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+        <footer className="relative z-10 animate-slide-up border-t border-border pt-4 max-w-4xl mx-auto w-full">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
+            {/* Contact */}
+            <div className="text-center md:text-left">
+              <p className="text-xs text-muted-foreground mb-1">Kontak</p>
+              <a
+                href="mailto:dukungan@makalah.ai"
+                className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </a>
+                dukungan@makalah.ai
+              </a>
+            </div>
+
+            {/* Beta Link */}
+            <div className="text-center md:text-right">
+              <p className="text-xs text-muted-foreground mb-1">
+                Kunjungi beta version
+              </p>
+              <a
+                href="https://beta.makalah.ai/auth"
+                className="text-xs text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1 group"
+              >
+                <span>https://beta.makalah.ai</span>
+                <svg
+                  className="w-3 h-3 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </footer>
       </section>
