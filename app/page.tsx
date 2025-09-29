@@ -59,8 +59,9 @@ export default function UnderConstruction() {
             <div className="animate-slide-up">
               <div className="relative">
                 <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-transparent blur-xl" />
-                <blockquote className="relative text-sm md:text-xl font-medium text-foreground leading-relaxed text-center">
-                  <p>Anda adalah pawang, sedangkan AI hanya tukang.</p>
+                <blockquote className="relative text-sm md:text-xl font-bold text-foreground leading-relaxed text-center">
+                  <p>Anda adalah pawang,</p> 
+                  <p>sedangkan AI hanya tukang.</p>
                   <p>Karya tulis tetap hasil buah pikir orisinal</p>
                 </blockquote>
               </div>
