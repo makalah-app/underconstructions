@@ -8,6 +8,7 @@
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --primary: oklch(0.65 0.2 45); /* Orange color */
+  --primary-yellow: oklch(92.252% 0.12546 95.421);
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -37,6 +38,8 @@
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.65 0.2 45);
+  --primary-yellow: oklch(0.78 0.12546 95.421);
+
 }
 
 @layer base {

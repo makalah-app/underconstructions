@@ -32,6 +32,7 @@ const config: Config = {
           DEFAULT: 'var(--card)',
           foreground: 'var(--card-foreground)'
         },
+        'primary-yellow': 'var(--primary-yellow)',
         border: 'var(--border)',
         input: 'var(--input)',
         ring: 'var(--ring)',
